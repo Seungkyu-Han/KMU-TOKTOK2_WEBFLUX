@@ -2,7 +2,7 @@ FROM openjdk:17-jdk
 
 CMD ["./gradlew", "clean", "build", "-x", "test"]
 
-VOLUME /chat
+VOLUME /chat_webflux
 
 ARG JAR_FILE=build/libs/kmu-toktok-webflux-0.0.1-SNAPSHOT.war
 
